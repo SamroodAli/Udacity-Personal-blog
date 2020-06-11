@@ -1,0 +1,94 @@
+.cardpara {
+    margin-top: 15px;
+    font-size: 1em;
+    line-height: 2em;
+}
+
+.author-info {
+    position: relative;
+    top: 5vh;
+    font-size: 1em;
+    line-height: 2em;
+    color: white;
+}
+
+.author {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "start center end";
+    height: 50vh;
+    background: #122D4E;
+    justify-content: center;
+    align-items: center;
+}
+
+#author-middle {
+    grid-area: center;
+}
+
+#author-end {
+    grid-area: end;
+}
+
+.avatar {
+    display: inline-block;
+    border-radius: 25%;
+    height: 15vh;
+    width: 15w;
+    position: relative;
+    top: 5vh;
+    grid-area: start;
+    left: 5vw;
+}
+
+h3 {
+    text-align: center;
+}
+
+u {
+    font-size: 1em;
+    color: blue;
+}
+
+.blog-heading {
+    font-size: 2em;
+    text-align: center;
+}
+
+.blog-main-image {
+    width: 90%;
+}
+
+.blog {
+    position: relative;
+    top: 12vh;
+    padding: 2vw;
+    display: grid;
+    grid-template-columns: 90vw;
+    justify-content: center;
+    background-color: #f4f6ff;
+}
+
+@media(min-width:600px) {
+    .cardpara {
+        font-size: 1.5em;
+        line-height: initial;
+    }
+    u {
+        font-size: 1.25em;
+    }
+}
+
+@media(min-width:1000px) {
+    .cardpara {
+        font-size: 1.5em;
+        line-height: initial;
+    }
+    u {
+        font-size: 1.5em;
+    }
+    .blog-heading {
+        font-size: 3em;
+    }
+}

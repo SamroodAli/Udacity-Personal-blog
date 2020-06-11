@@ -1,0 +1,75 @@
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .heading {
+        width: 100vw;
+        z-index: 1;
+        background-color: #112d4e;
+        color: #dbe2ef;
+    }
+    
+    .mainH1 {
+        padding-top: 1vh;
+        margin-top: 0;
+        text-align: center;
+        font-size: 2em;
+    }
+    
+    .homeNav {
+        padding-top: 5px;
+        background-color: #3f72af;
+    }
+    
+    ul {
+        margin: 10px;
+        padding-left: 10px;
+        font-size: large;
+        list-style-type: none;
+    }
+    
+    ul li a {
+        margin-bottom: 10px;
+        display: inline-block;
+        width: 100vw;
+        font-size: 1em;
+        color: white;
+        text-decoration: none;
+    }
+    
+    ul li a:hover {
+        background-color: #dbe2ef;
+        color: #112d4e;
+        font-size: larger;
+        text-transform: uppercase;
+    }
+    
+    @media(min-width:600px) {
+        li {
+            display: inline;
+        }
+        ul {
+            text-align: right;
+        }
+        ul li a {
+            display: inline;
+            margin-right: 20px;
+            margin-left: 50px;
+            font-size: 1.5em;
+        }
+        ul li a:hover {
+            background-color: #dbe2ef;
+            color: #112d4e;
+            font-size: 3em;
+            text-transform: uppercase;
+        }
+    }
+    
+    @media(min-width:600px) {
+        .heading {
+            position: fixed;
+            top: 0;
+        }
+    }
+    
